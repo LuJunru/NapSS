@@ -21,9 +21,8 @@ python modeling/finetune.py \
 --max_source_length=1024 \
 --max_target_length=1024 \
 --unlikelihood_training \
---unlikelihood_training_mode=both \
+--unlikelihood_training_mode=cochrane \
 --unlikelihood_cochrane_weights_file=data/logr_weights/bart_freq_normalized_ids.txt \
---unlikelihood_newsela_weights_file=data/logr_weights/bart_freq_newsela_ids.txt \
 --unlikelihood_exclude_tokens=4,6 \
 --unlikelihood_num_weights=-1 \
 --unlikelihood_softmax \

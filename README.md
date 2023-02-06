@@ -25,11 +25,12 @@ It takes around 3.5 hours to finetune NapSS from scratch, on 2 Quadro RTX 6000 G
 #### Stage 2: simplification (2 hours)
 - (20 mins) Train NapSS: `bash scripts/train/bart-napss.sh`
 - (100 mins) Generate simplified text via NapSS: `bash scripts/generate/bart-gen-napss.sh`
-- (Optional) Run `bash scripts/train/bart-napss-ul.sh` for NapSS + UL joint training. We use "both" settings, you can check detailed instruction for other settings in [Paragraph-level Simplification of Medical Texts](https://github.com/AshOlogn/Paragraph-level-Simplification-of-Medical-Texts).
+- (Optional) Run `bash scripts/train/bart-napss-ul.sh` for NapSS + UL joint training. We use "cochrane" settings, you can check detailed instruction for other settings in [Paragraph-level Simplification of Medical Texts](https://github.com/AshOlogn/Paragraph-level-Simplification-of-Medical-Texts).
 - (Optional) Generate simplified text via joint model: `bash scripts/generate/bart-gen-napss-ul.sh`
+- (Optional) Use above scripts and finetuned models for zero-shot inference on OOD TICO-19 dataset: `data/data-tico19`
 
 ### Finetuned Models
-- We provide finetuned models here: will be upload soon.
+- We provide finetuned models here: https://drive.google.com/drive/folders/1CHBsuI4aEfjM_ds-FzQW_Hp5JeW_ajYy?usp=sharing.
 
 ### Calculate metrics
 - Calculate evaluation metrics over generated files: `python3 scripts/utils/calculate_evaluation_metrics.py trained_models/bart-no-ul-abskeys/gen_nucleus_test_1_0-500.json`
