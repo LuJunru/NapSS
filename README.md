@@ -1,5 +1,5 @@
 # NapSS
-Code and data for our EACL 2023 finding paper "NapSS: Paragraph-level Medical Text Simplification via Narrative Prompting and Sentence-matching Summarization" which can be found: TBD. We built our codes upon the repository: ["Paragraph-level Simplification of Medical Texts"](https://github.com/AshOlogn/Paragraph-level-Simplification-of-Medical-Texts).
+Code and data for our EACL 2023 finding paper "NapSS: Paragraph-level Medical Text Simplification via Narrative Prompting and Sentence-matching Summarization" which can be found: https://arxiv.org/abs/2302.05574. We built our codes upon the repository: ["Paragraph-level Simplification of Medical Texts"](https://github.com/AshOlogn/Paragraph-level-Simplification-of-Medical-Texts).
 
 ## Usage
 It takes around 3.5 hours to finetune NapSS from scratch, on 2 Quadro RTX 6000 GPUs.
