@@ -35,3 +35,8 @@ It takes around 3.5 hours to finetune NapSS from scratch, on 2 Quadro RTX 6000 G
 ### Calculate metrics
 - Calculate evaluation metrics over generated files: `python3 scripts/utils/calculate_evaluation_metrics.py trained_models/bart-no-ul-abskeys/gen_nucleus_test_1_0-500.json`
 - Note: Bertscore computing is provided but muted, since it takes quite long time to compute this metric (e.g, 40 mins).
+
+### Human evaluation
+- We provide two sets (expert and non_experts) human evaluation results in the `human evaluation` folder.
+- The `non_experts` set include results evaluated by 6 annotators on three asepscts: Simplicity, Fluency and Factuality. 
+- The `expert` set include results evaluated by 2 annotators only on Factuality.
